@@ -148,3 +148,20 @@ function initMap() {
       ]
     });
 }
+
+document.getElementById("openFormBtn").addEventListener("click", function () {
+  var form = document.getElementById("myForm");
+  form.style.display = "block";
+  setTimeout(function () {
+      form.classList.add("show");
+  }, 10); // Delay the class addition to allow for the display property to take effect
+});
+
+document.getElementById("closeFormBtn").addEventListener("click", function () {
+  var form = document.getElementById("myForm");
+  form.classList.remove("show");
+  setTimeout(function () {
+      form.style.display = "none";
+  }, 500); // Delay the display property change to allow for the transition effect
+});
+
