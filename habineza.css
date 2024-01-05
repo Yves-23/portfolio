@@ -11733,6 +11733,13 @@ pre .code {
   padding: 8px;
   margin-bottom: 16px;
   box-sizing: border-box;
+  resize: vertical;
+}
+
+.popup-form textarea{
+  width: 100%;
+  height: 30vh;
+  resize: vertical;
 }
 
 .popup-form button {
@@ -11742,6 +11749,7 @@ pre .code {
   border: none;
   cursor: pointer;
   font-weight: bold;
+  resize: vertical;
 }
 
 .popup-form button:hover {
@@ -11780,4 +11788,11 @@ pre .code {
 
 .popup-form.show + .popup-overlay {
   display: block; /* Show the overlay when the form is open */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .popup-form {
+      width: 90%; 
+  }
 }
