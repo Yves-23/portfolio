@@ -149,12 +149,32 @@ function initMap() {
     });
 }
 
+function validateForm() {
+  var nameInput = document.getElementById("email").value;
+  var emailInput = document.getElementById("job").value;
+
+  if (nameInput.trim() === "" || emailInput.trim() === "") {
+      alert("Please fill out all fields.");
+      return false; 
+  }
+
+  // Add more sophisticated validation logic as needed
+
+  // If validation passes, you can proceed with form submission
+  return true;
+}
+
+function clearForm() {
+  document.getElementById("myForm").reset();
+}
+//clearForm();
+
 document.getElementById("openFormBtn").addEventListener("click", function () {
   var form = document.getElementById("myForm");
   form.style.display = "block";
   setTimeout(function () {
       form.classList.add("show");
-  }, 10); // Delay the class addition to allow for the display property to take effect
+  }, 10); 
 });
 
 document.getElementById("closeFormBtn").addEventListener("click", function () {
@@ -162,6 +182,6 @@ document.getElementById("closeFormBtn").addEventListener("click", function () {
   form.classList.remove("show");
   setTimeout(function () {
       form.style.display = "none";
-  }, 500); // Delay the display property change to allow for the transition effect
-});
+  }, 500); 
 
+});
