@@ -179,9 +179,13 @@ document.getElementById("openFormBtn").addEventListener("click", function () {
 
 document.getElementById("closeFormBtn").addEventListener("click", function () {
   var form = document.getElementById("myForm");
+  var isClickInsideForm = form.contains(event.target);
+
   form.classList.remove("show");
   setTimeout(function () {
       form.style.display = "none";
   }, 500); 
-
+  if (!isClickInsideForm) {
+    form.style.display = 'none';
+}
 });
