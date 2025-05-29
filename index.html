@@ -77,8 +77,8 @@
                     academic projects, and personal endeavors. My expertise lies in both front-end and back-end development, 
                     machine learning, and network configuration. I am passionate about solving real-world problems 
                     through technology and am eager to contribute to innovative projects in dynamic environments.</p>
-                <button class="btn btn-outline-danger" id="printCVButton" onclick="downloadFile('https://drive.google.com/file/d/1Im-1aMBa4z6BuA3UUMuhgSLwNnCajaHo/view?usp=sharing')"> 
-                    <i class="icon-down-circled2 "></i>Download My CV</button>
+                <!-- <button class="btn btn-outline-danger" id="printCVButton" onclick="downloadFile('https://drive.google.com/file/d/1Im-1aMBa4z6BuA3UUMuhgSLwNnCajaHo/view?usp=sharing')"> 
+                    <i class="icon-down-circled2 "></i>Download My CV</button> -->
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -156,7 +156,7 @@
                             <hr>
 
                             <h6 class="title text-danger">January, 2024 - December, 2024</h6>
-                            <P><b> React Native App Developer</b></P>
+                            <P><b> React Native Developer</b></P>
                             <P class="subtitle">During my first six-month at NeuralLabs AI Inc., 
                                 I contributed to the development of BantuEd, a mobile app designed to enhance education 
                                 for African children from Kindergarten to Level 12. 
@@ -912,21 +912,21 @@
     <script>
         document.getElementById('printCVButton1').addEventListener('click', function() {
             // Replace 'YourCV.pdf' with the actual filename and path of your CV
-            var cvUrl1 = 'https://drive.google.com/file/d/1Im-1aMBa4z6BuA3UUMuhgSLwNnCajaHo/view?usp=sharing';
+            var cvUrl1 = 'https://drive.google.com/file/d/1vpocf3J0U9TUSXI4WOlxldkjsylw3dmC/view?usp=drive_link';
 
             // Open the CV in a new tab/window for printing or downloading
         window.open(cvUrl1);
         });
     </script>
 
-    <script>
+    <!-- <script>
         function downloadFile(url) {
             var link = document.createElement('a');
             link.href = url;
-            link.download = 'My CV.pdf'; // specify the desired filename
+            link.download = 'My CV.pdf'; 
             link.click();
         }
-    </script>
+    </script> -->
 
 </body>
 </html>
